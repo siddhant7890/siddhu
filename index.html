@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 34;
+        console.log(a);
+        const b = 45;
+        var c = 67;
+        console.log(a - b);
+
+        function hello() {
+            console.log("hey siddhu");
+        }
+        let v = {
+            x: 12,
+            y: "hello",
+            func: function myfunc(number) {
+                console.log("the number is " + number);
+            }
+        }
+        document.addEventListener("click", function click() {
+            console.log("clicked")
+                //alert("hello")
+            let conf = confirm("are you sure?");
+            console.log(conf);
+        })
+        let mobj = {
+            a: this,
+            myfunc: function(number) {
+                console.log(this);
+            }
+        }
+        mobj.myfunc();
+        console.log(mobj.a);
+        setTimeout(() => {
+            console.log("yayy")
+        }, 3000);
+        console.log("mai  niche")
+    </script>
+</head>
+
+<body>
+    i am learning js
+</body>
+
+</html>
